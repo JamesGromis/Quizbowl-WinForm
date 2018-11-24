@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>The geometry of these entities can be approximated by Flamm’s paraboloid. One quantity related to these
+entities is equal to two times mass times “big G” divided by another constant squared. Under certain
+circumstances, these entities exhibit the Lense-Thirring effect, according to the Kerr metric. The ​(*) Penrose
+process transfers momentum from these entities to objects passing through their ​ergosphere. These entities can be
+characterized by three externally observable properties, and they are surrounded by an event horizon inside which
+the escape velocity is greater than the speed of light. For 10 points, name these massive objects from which light
+cannot escape.</value>
+  </data>
 </root>
