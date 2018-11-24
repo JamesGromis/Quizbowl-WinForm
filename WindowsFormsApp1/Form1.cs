@@ -150,6 +150,11 @@ namespace WindowsFormsApp1
                 textBox6.Text = "Wrong Answer";
             }
         }
+
+        private void nextquestion2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
