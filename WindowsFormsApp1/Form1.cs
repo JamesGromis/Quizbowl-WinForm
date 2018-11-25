@@ -24,6 +24,15 @@ namespace WindowsFormsApp1
             textBox6.Hide();
             button5.Hide();
             button6.Hide();
+            Q4Qbox.Hide();
+            Q4ABox.Hide();
+            Q4SubmitButton.Hide();
+            Q3NextQButton.Hide();
+            Q4NextQButton.Hide();
+            Q5QBox.Hide();
+            Q5ABox.Hide();
+            Q5SubmitButton.Hide();
+            
             this.Hide();
             Form2 f2 = new Form2();
             f2.ShowDialog();
@@ -94,7 +103,7 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             string answer1 = textBox4.Text;
-            if (answer1 == "Carrots")
+            if (answer1 == "John Calvin​")
             {
                 score++;
                 textBox4.Text = "Correct Answer";
@@ -125,6 +134,7 @@ namespace WindowsFormsApp1
             textBox5.Show();
             textBox6.Show();
             button6.Show();
+            Q3NextQButton.Show();
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -140,7 +150,7 @@ namespace WindowsFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
             string answer2 = textBox6.Text;
-            if (answer2 == "4")
+            if (answer2 == "lambs")
             {
                 score++;
                 textBox6.Text = "Correct Answer";
@@ -152,6 +162,79 @@ namespace WindowsFormsApp1
         }
 
         private void nextquestion2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Q4Qbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Q4ABox_TextChanged(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void Q4SubmitButton_Click(object sender, EventArgs e)
+        {
+            string answer3 = Q4ABox.Text;
+            if(answer3== "Neville Chamberlain")
+            {
+                score++;
+                Q4ABox.Text = "Correct Answer";
+            }
+            else
+            {
+                Q4ABox.Text = "Wrong Answer";
+            }
+        }
+
+        private void Q3NextQButton_Click(object sender, EventArgs e)
+        {
+            textBox5.Hide();
+            textBox6.Hide();
+            button6.Hide();
+            Q3NextQButton.Hide();
+            Q4Qbox.Show();
+            Q4ABox.Show();
+            Q4SubmitButton.Show();
+            Q4NextQButton.Show();
+        }
+
+        private void Q4NextQButton_Click(object sender, EventArgs e)
+        {
+            Q4Qbox.Hide();
+            Q4ABox.Hide();
+            Q4SubmitButton.Hide();
+            Q4NextQButton.Hide();
+            Q5QBox.Show();
+            Q5ABox.Show();
+            Q5SubmitButton.Show();
+
+        }
+
+        private void Q5SubmitButton_Click(object sender, EventArgs e)
+        {
+            string answer4 = Q5ABox.Text;
+            if(answer4 == "Geoffrey Chaucer")
+            {
+                score++;
+                Q5ABox.Text = "Correct Answer";
+
+            }
+            else
+            {
+                Q5ABox.Text = "Wrong Answer";
+            }
+        }
+
+        private void Q5ABox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Q5QBox_TextChanged(object sender, EventArgs e)
         {
 
         }
