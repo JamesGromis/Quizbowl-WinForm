@@ -41,6 +41,14 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.Q4Qbox = new System.Windows.Forms.TextBox();
+            this.Q4ABox = new System.Windows.Forms.TextBox();
+            this.Q4SubmitButton = new System.Windows.Forms.Button();
+            this.Q3NextQButton = new System.Windows.Forms.Button();
+            this.Q5QBox = new System.Windows.Forms.TextBox();
+            this.Q5ABox = new System.Windows.Forms.TextBox();
+            this.Q5SubmitButton = new System.Windows.Forms.Button();
+            this.Q4NextQButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -95,14 +103,14 @@
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(302, 84);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(51, 27);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(306, 78);
+            this.textBox3.Size = new System.Drawing.Size(645, 167);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "Peas and...";
+            this.textBox3.Text = resources.GetString("textBox3.Text");
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
@@ -135,14 +143,14 @@
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(302, 85);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(51, 27);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(306, 77);
+            this.textBox5.Size = new System.Drawing.Size(645, 170);
             this.textBox5.TabIndex = 9;
-            this.textBox5.Text = "2 plus 2 =";
+            this.textBox5.Text = resources.GetString("textBox5.Text");
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
@@ -163,12 +171,100 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // Q4Qbox
+            // 
+            this.Q4Qbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q4Qbox.Location = new System.Drawing.Point(51, 27);
+            this.Q4Qbox.Multiline = true;
+            this.Q4Qbox.Name = "Q4Qbox";
+            this.Q4Qbox.ReadOnly = true;
+            this.Q4Qbox.Size = new System.Drawing.Size(645, 170);
+            this.Q4Qbox.TabIndex = 12;
+            this.Q4Qbox.Text = resources.GetString("Q4Qbox.Text");
+            this.Q4Qbox.TextChanged += new System.EventHandler(this.Q4Qbox_TextChanged);
+            // 
+            // Q4ABox
+            // 
+            this.Q4ABox.Location = new System.Drawing.Point(234, 216);
+            this.Q4ABox.Name = "Q4ABox";
+            this.Q4ABox.Size = new System.Drawing.Size(330, 20);
+            this.Q4ABox.TabIndex = 13;
+            this.Q4ABox.TextChanged += new System.EventHandler(this.Q4ABox_TextChanged);
+            // 
+            // Q4SubmitButton
+            // 
+            this.Q4SubmitButton.Location = new System.Drawing.Point(318, 259);
+            this.Q4SubmitButton.Name = "Q4SubmitButton";
+            this.Q4SubmitButton.Size = new System.Drawing.Size(144, 30);
+            this.Q4SubmitButton.TabIndex = 14;
+            this.Q4SubmitButton.Text = "Submit Answer";
+            this.Q4SubmitButton.UseVisualStyleBackColor = true;
+            this.Q4SubmitButton.Click += new System.EventHandler(this.Q4SubmitButton_Click);
+            // 
+            // Q3NextQButton
+            // 
+            this.Q3NextQButton.Location = new System.Drawing.Point(448, 362);
+            this.Q3NextQButton.Name = "Q3NextQButton";
+            this.Q3NextQButton.Size = new System.Drawing.Size(160, 42);
+            this.Q3NextQButton.TabIndex = 15;
+            this.Q3NextQButton.Text = "Next Question";
+            this.Q3NextQButton.UseVisualStyleBackColor = true;
+            this.Q3NextQButton.Click += new System.EventHandler(this.Q3NextQButton_Click);
+            // 
+            // Q5QBox
+            // 
+            this.Q5QBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q5QBox.Location = new System.Drawing.Point(51, 30);
+            this.Q5QBox.Multiline = true;
+            this.Q5QBox.Name = "Q5QBox";
+            this.Q5QBox.ReadOnly = true;
+            this.Q5QBox.Size = new System.Drawing.Size(645, 164);
+            this.Q5QBox.TabIndex = 16;
+            this.Q5QBox.Text = resources.GetString("Q5QBox.Text");
+            this.Q5QBox.TextChanged += new System.EventHandler(this.Q5QBox_TextChanged);
+            // 
+            // Q5ABox
+            // 
+            this.Q5ABox.Location = new System.Drawing.Point(234, 216);
+            this.Q5ABox.Name = "Q5ABox";
+            this.Q5ABox.Size = new System.Drawing.Size(330, 20);
+            this.Q5ABox.TabIndex = 17;
+            this.Q5ABox.TextChanged += new System.EventHandler(this.Q5ABox_TextChanged);
+            // 
+            // Q5SubmitButton
+            // 
+            this.Q5SubmitButton.Location = new System.Drawing.Point(318, 259);
+            this.Q5SubmitButton.Name = "Q5SubmitButton";
+            this.Q5SubmitButton.Size = new System.Drawing.Size(144, 30);
+            this.Q5SubmitButton.TabIndex = 18;
+            this.Q5SubmitButton.Text = "Submit Answer";
+            this.Q5SubmitButton.UseVisualStyleBackColor = true;
+            this.Q5SubmitButton.Click += new System.EventHandler(this.Q5SubmitButton_Click);
+            // 
+            // Q4NextQButton
+            // 
+            this.Q4NextQButton.Location = new System.Drawing.Point(448, 362);
+            this.Q4NextQButton.Name = "Q4NextQButton";
+            this.Q4NextQButton.Size = new System.Drawing.Size(160, 42);
+            this.Q4NextQButton.TabIndex = 19;
+            this.Q4NextQButton.Text = "Next Question";
+            this.Q4NextQButton.UseVisualStyleBackColor = true;
+            this.Q4NextQButton.Click += new System.EventHandler(this.Q4NextQButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Q4NextQButton);
+            this.Controls.Add(this.Q5SubmitButton);
+            this.Controls.Add(this.Q5ABox);
+            this.Controls.Add(this.Q5QBox);
+            this.Controls.Add(this.Q3NextQButton);
+            this.Controls.Add(this.Q4SubmitButton);
+            this.Controls.Add(this.Q4ABox);
+            this.Controls.Add(this.Q4Qbox);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -202,6 +298,14 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox Q4Qbox;
+        private System.Windows.Forms.TextBox Q4ABox;
+        private System.Windows.Forms.Button Q4SubmitButton;
+        private System.Windows.Forms.Button Q3NextQButton;
+        private System.Windows.Forms.TextBox Q5QBox;
+        private System.Windows.Forms.TextBox Q5ABox;
+        private System.Windows.Forms.Button Q5SubmitButton;
+        private System.Windows.Forms.Button Q4NextQButton;
     }
 }
 
